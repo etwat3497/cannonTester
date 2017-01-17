@@ -67,62 +67,64 @@ public class CannonTester {
                 
             }
         }
-        String[] possibleEquations = {"dxt","dxv","tv","adytv1","adyt","dytv1","adyv1","atv2","adyt",
-            "adyv2","dytv2","atv1","atv2","tv1v2","av1v2","adyv1","adyv2","dyv1v2","av1v2","tv1v2","dyv1v2",
-            "dytv1","dytv2","v1xv1y","thetav1x","thetav1y"};
+        String[] possibleEquations = {"dxt","dxv1x","tv1x","atv1y","adyt","dytv1y","adyv1y","atv2y","adyt",
+            "adyv2y","dytv2y","atv1y","atv2y","tv1yv2y","av1yv2y","adyv1y","adyv2y","dyv1yv2y","av1yv2y","tv1yv2y","dyv1yv2y",
+            "dytv1y","dytv2y","v1xv1y","thetav1x","thetav1y","v1xv2y"};
         switch(megaString){
             //For the case of any equation, run corresponding method
             case "dxt": ;
             break;
-            case "dxv": ;
+            case "dxv1x": ;
             break;
-            case "tv": ;
+            case "tv1x": ;
             break;
-            case "adytv1": ;
-            break;
-            case "adyt": ;
-            break;
-            case "dytv1": ;
-            break;
-            case "adyv1": ;
-            break;
-            case "atv2": ;
+            case "atv1y": ;
             break;
             case "adyt": ;
             break;
-            case "adyv2": ;
+            case "dytv1y": ;
             break;
-            case "dytv2": ;
+            case "adyv1y": ;
             break;
-            case "atv1": ;
+            case "atv2y": ;
             break;
-            case "atv2": ;
+            case "adyt": ;
             break;
-            case "tv1v2": ;
+            case "adyv2y": ;
             break;
-            case "av1v2": ;
+            case "dytv2y": ;
             break;
-            case "adyv1": ;
+            case "atv1y": ;
             break;
-            case "adyv2": ;
+            case "atv2y": ;
             break;
-            case "dyv1v2": ;
+            case "tv1yv2y": ;
             break;
-            case "av1v2": ;
+            case "av1yv2y": ;
             break;
-            case "tv1v2": ;
+            case "adyv1y": ;
             break;
-            case "dyv1v2": ;
+            case "adyv2y": ;
             break;
-            case "dytv1": ;
+            case "dyv1yv2y": ;
             break;
-            case "dytv2": ;
+            case "av1yv2y": ;
+            break;
+            case "tv1yv2y": ;
+            break;
+            case "dyv1yv2y": ;
+            break;
+            case "dytv1y": ;
+            break;
+            case "dytv2y": ;
             break;
             case "v1xv1y": ;
             break;
             case "thetav1x": ;
             break;
             case "thetav1y": ;
+            break;
+            case "v1xv2y": ;
             break;
             default: System.out.println("No solution can be reached with these variables");;
             break;
