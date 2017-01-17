@@ -21,6 +21,8 @@ public class CannonTester {
         // TODO code application logic here
         
         double v1, v1x, v1y, vf, dx, dy, t, a, theta;
+        
+      
 
         System.out.println("Welcome to the Cannon of Physics! Here you can easily solve projectile motion problems!");
         System.out.println("These are a list of variables you can input (Input short form):\nv1 - Initial Velocity\nv1x - Initial x Velocity\nv1y - Initial y Velocity\n"
@@ -37,11 +39,14 @@ public class CannonTester {
         
         //The variable the user wants to find
         String unknownVar = "v2";
+        
+        //Set to lower case
+        unknownVar.toLowerCase();
         //The number of variables the user knows
         int numVar = 4;
         //Array to store the name of the variables known
         String[] knownVal = new String[numVar];
-        //For testing purposes
+        //For testing purposes *When taking input remember to set all values to lower case
         knownVal[0] = "a";
         knownVal[1] = "dy";
         knownVal[2] = "d1x";
@@ -57,9 +62,72 @@ public class CannonTester {
         }
         
         //Compare megastring to each possible equation
-        if(unknownVar == "v1"){
-            
+        for(int i=0;i<possibleEquations.length;i++){
+            if(unknownVar == possibleEquations[i]){
+                
+            }
         }
+        String[] possibleEquations = {"dxt","dxv","tv","adytv1","adyt","dytv1","adyv1","atv2","adyt",
+            "adyv2","dytv2","atv1","atv2","tv1v2","av1v2","adyv1","adyv2","dyv1v2","av1v2","tv1v2","dyv1v2",
+            "dytv1","dytv2","v1xv1y","thetav1x","thetav1y"};
+        switch(megaString){
+            //For the case of any equation, run corresponding method
+            case "dxt": ;
+            break;
+            case "dxv": ;
+            break;
+            case "tv": ;
+            break;
+            case "adytv1": ;
+            break;
+            case "adyt": ;
+            break;
+            case "dytv1": ;
+            break;
+            case "adyv1": ;
+            break;
+            case "atv2": ;
+            break;
+            case "adyt": ;
+            break;
+            case "adyv2": ;
+            break;
+            case "dytv2": ;
+            break;
+            case "atv1": ;
+            break;
+            case "atv2": ;
+            break;
+            case "tv1v2": ;
+            break;
+            case "av1v2": ;
+            break;
+            case "adyv1": ;
+            break;
+            case "adyv2": ;
+            break;
+            case "dyv1v2": ;
+            break;
+            case "av1v2": ;
+            break;
+            case "tv1v2": ;
+            break;
+            case "dyv1v2": ;
+            break;
+            case "dytv1": ;
+            break;
+            case "dytv2": ;
+            break;
+            case "v1xv1y": ;
+            break;
+            case "thetav1x": ;
+            break;
+            case "thetav1y": ;
+            break;
+            default: System.out.println("No solution can be reached with these variables");;
+            break;
+        }
+
                   
     }
 }
