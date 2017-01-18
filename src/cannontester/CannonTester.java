@@ -68,7 +68,11 @@ public class CannonTester {
         if(unknownVar == "v1"){
             switch(megaString){
                 //For the case of any equation, run corresponding method
-                case "": ;
+                case "theta1v1y": oppThetaOFhyp(v1y,theta1);
+                break;
+                case "theta1v1x": adjThetaOFhyp(v1x,theta1);
+                break;
+                case "v1xv1y": pythagFORHypotenuse(v1x,v1y);
                 break;
                 //Cant you find the initial velocity knowing v1x and v1y and theta
             }
@@ -78,7 +82,11 @@ public class CannonTester {
                 //For the case of any equation, run corresponding method
                 case "dxt":v1x = dxtOFv1x(dx,t) ;
                 break;
-                case "thetav1y":v1x = v1ytheta1FORv1x(v1y,theta1) ;
+                case "theta1v1y": oppThetaOFadj(v1y,theta1);
+                break;
+                case "theta2v2y": oppThetaOFadj(v2y,theta2);
+                break;
+                case "v1v1y": pythagFORSidelength(v1,v1y);
                 break;
             }
         }
@@ -93,14 +101,20 @@ public class CannonTester {
                 break;
                 case "dytv2y": v1y=v2ydytOFv1y(v2y,dy,t);
                 break;
-                case "thetav1x": v1y=v1xtheta1FORv1y(v1x,theta1);
+                case "theta1v1x": adjThetaOFopp(v1x,theta1);
+                break;
+                case "v1v1x": pythagFORSidelength(v1,v1x);
                 break;
             }
         }
         else if(unknownVar == "v2"){
             switch(megaString){
                 //For the case of any equation, run corresponding method
-                case "v1xv2y": v2=v1xv2yOFv2(v2y,v1x);
+                case "theta2v2y": oppThetaOFhyp(v2y,theta2);
+                break;
+                case "theta2v1x": adjThetaOFhyp(v1x,theta2);
+                break;
+                case "v1xv1y": pythagFORHypotenuse(v1x,v2y);
                 break;
             }
         }
@@ -114,6 +128,10 @@ public class CannonTester {
                 case "adyv1y": v2y=v1yadyOFv2y(v1y,a,dy);
                 break;
                 case "dytv1y": v2y=v1ydytOFv2y(v1y,dy,t);
+                break;
+                case "theta2v1x": adjThetaOFopp(v1x,theta2);
+                break;
+                case "v1xv2": pythagFORSidelength(v2,v1y);
                 break;
             }
         }
@@ -168,14 +186,22 @@ public class CannonTester {
         else if(unknownVar == "theta1"){
             switch(megaString){
                 //For the case of any equation, run corresponding method
-                case "v1xv1y": theta1=v1xv1yWiththeta1(v1x,v1y);
+                case "v1xv1y": theta1=oppAdjOFtheta(v1x,v1y);
+                break;
+                case "v1yv1": oppHypOFtheta(v1y,v1);
+                break;
+                case "v1xv1": adjThetaOFhyp(v1x,v1);
                 break;
             }
         }
         else if(unknownVar == "theta2"){
             switch(megaString){
                 //For the case of any equation, run corresponding method
-                case "": theta2=;
+                case "v1xv2y": theta2=oppAdjOFtheta(v1x,v2y);
+                break;
+                case "v2yv2": oppHypOFtheta(v2y,v2);
+                break;
+                case "v1xv2": adjThetaOFhyp(v1x,v2);
                 break;
             }
         }
